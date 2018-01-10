@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Collapsible sidebar using Bootstrap 3</title>
+
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style4.css">
+		
+		<style type="text/css">
+		.logo{	color:goldenrod;
+				font-family:arabic;
+				font-size:50px;}
+				
+		h2{		font-family:Monotype Corsiva;	
+				font-size:50px;
+				}	
+		</style>
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Richie Rich Pvt. Ltd.</h3>
+                    <strong>RR</strong>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Home Page
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="home.html">Home </a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">
+                            <i class="glyphicon glyphicon-briefcase"></i>
+                            About Us
+                        </a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-duplicate"></i>
+                            Explore
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="menu.html">Menu</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="newlocateus.html">
+                            <i class="glyphicon glyphicon-link"></i>
+                            Locate Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+			<table class="table">
+			<thead>
+			<tr>
+			<td class="col-md-2"><img src="Logo2.jpg" alt="Logo" align="left" width="150px" height="150px"></td>
+			<th class="col-md-10 logo" >Richie Rich Foods Pvt. Ltd.</th>
+			</tr>
+			</thead>
+			</table>
+                <nav class="navbar navbar-defaul">
+					<div class="container-fluid" >
+						<div class="navbar-header">
+								<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+									<i class="glyphicon glyphicon-align-left"></i>
+								</button>
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfasaTn-L8-CU69k7aGEpl9Qu480Sg4POEbyX01Q7NPyZaXHQ/viewform">Advertise</a></li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="https://docs.google.com/forms/d/e/1FAIpQLScG-7siIaR9sqTro3frEdhGx2Hlfyof-boVKumPHRBwplICtg/viewform">Catering</a></li>
+								</ul>
+						</div>
+						</div>
+                  
+				</nav>
+			
+
+                <h2 align="center" style="font-face:Cooper black">About Us</h2>
+				<p>Established in 2017, we, Richie Rich Foods private Limited A gourmet family-owned bakery shop which started in the heart of Ghaziabad. Our Bakery produces delectable pastries that combine classic Asian traditions with modern flavors for the contemporary palette.. Our Bakery provides cutting-edge designed wedding dessert creations using delicious  fruits like, apple ,  strawberries or other fresh fruits to create mousse cakes, luscious tarts and a variety of handcrafted Asian pastries specialties. In addition, we can fulfill your catering and wedding favour needs with a dessert menu of petit fours, chocolates and cookies. Our Bakery prides itself on the personalized service it offers to each of its wedding cake and special occasion cake clients. Our decorators use only the freshest and finest ingredients available.</p>
+				<div class="line"></div>
+				<p>We cater to only selected people who want something new and designer with different taste & feelings. we are the innovative producer of continental desserts with fusion of Indian taste
+				We are here to ensure that your unique celebration becomes an extraordinary memory. </p>
+				<div class="line"></div>
+                <p>We have the infrastructure to offer you fresh & pure bakery products of world class quality prepared in strict hygienic conditions. The Italian machines used in making such bakery products perhaps make all the difference.</p>
+                <div class="line"></div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
+</html>
